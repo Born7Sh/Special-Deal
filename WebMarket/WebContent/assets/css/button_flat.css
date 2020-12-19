@@ -1,0 +1,209 @@
+@charset "utf-8";
+/* ver 0.2 */
+
+/* button 
+---------------------------------------------- */
+.xet_btn {
+	display: inline-block;
+	zoom: 1; *display: inline;  /* zoom and *display = ie7 hack for display:inline-block */
+	outline: none;
+	cursor:pointer;
+	vertical-align:middle;
+	text-align: center;
+	text-decoration:none !important;
+	margin:0;
+	border:0;
+	-webkit-appearance: none;
+	color: #555;
+	background: transparent;
+}
+.xet_btn.big {
+	line-height:52px !important;
+	font-size: 18px !important;	
+	padding:0 28px !important; 
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+.xet_btn.large {
+	line-height: 46px !important;
+	font-size: 16px !important;	
+	padding:0 20px !important; 
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+.xet_btn.medium {
+	line-height: 36px !important;
+	font-size: 14px !important;	
+	padding:0 12px !important;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.xet_btn.small {
+	line-height:18px !important;
+	font-size: 12px !important;
+	padding:0 8px !important; 
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+.xet_btn.xet_btn_block {
+	display: block;
+	width: 100%;
+}
+
+/* color styles 
+---------------------------------------------- */
+/* submit */
+.xet_btn.submit {
+	color: #fff !important;
+	text-shadow: 0 -1px -1px rgba(255, 255, 255, 0.75);
+	background: #2b2b2b !important;
+}
+
+/* dark */
+.xet_btn.dark {
+	color: #fff;
+	text-shadow: 0 -1px -1px rgba(255, 255, 255, 0.75);
+	background: #2b2b2b;
+}
+
+/* light */
+.xet_btn.light {
+	color: #555;
+	text-shadow: 0 -1px -1px rgba(255, 255, 255, 0.75);
+	background: #e1e1e1;
+}
+
+/* light */
+.xet_btn.white {
+	color: #555;
+	text-shadow: 0 -1px -1px rgba(255, 255, 255, 0.75);
+	background: #fff;
+	border: 1px solid #e1e1e1;
+}
+
+/* gray */
+.xet_btn.gray {
+	color: #fff;
+	text-shadow: 0 -1px -1px rgba(255, 255, 255, 0.75);
+	background: #666666;
+}
+
+/* emerald */
+.xet_btn.emerald {
+	color: #fff;
+	background: #2ecc71;
+}
+
+/* green_sea */
+.xet_btn.green_sea {
+	color: #fff;
+	background: #16a085;	
+}
+
+/* orange */
+.xet_btn.orange {
+	color: #fff;
+	background: #f39c12;	
+}
+ 
+ /* red */
+.xet_btn.red {
+	color: #fff;
+	background: #c0392b;	
+}
+
+/* silver */
+.xet_btn.silver {
+	color: #fff;
+	text-shadow: 0 -1px -1px rgba(255, 255, 255, 0.75);	
+	background: #bdc3c7;	
+}
+
+/* sns */
+.xet_btn.facebook {
+	font-size: 16px;
+	border: 0 !important;
+	background: #3B5998 !important;
+	color: #fff !important;
+}
+.xet_btn.twitter {
+	font-size: 16px;
+	border: 0 !important;
+	background: #1DA1F2 !important;
+	color: #fff !important;
+}
+.xet_btn.google {
+	font-size: 16px;
+	border: 0 !important;
+	background: #DC4B3F !important;
+	color: #fff !important;
+}
+.xet_btn.kakao {
+	font-size: 16px;
+	border: 0 !important;
+	background: #FFDC00 !important;
+	color: #3B1E1E !important;
+}
+
+
+@media (min-width: 992px) {
+	/* dark */
+	.xet_btn.dark:active,
+	.xet_btn.dark:hover {
+		background: #333;
+	}
+	
+	/* light */
+	.xet_btn.light:active,
+	.xet_btn.light:hover {
+		background: #d1d1d1;
+	}
+	
+	/* light */
+	.xet_btn.white:active,
+	.xet_btn.white:hover {
+		background: #f1f1f1;
+	}
+	
+	/* gray */
+	.xet_btn.gray:active,
+	.xet_btn.gray:hover {
+		background: #333;
+	}
+	
+	/* emerald */
+	.xet_btn.emerald:active,
+	.xet_btn.emerald:hover {
+		background: #40D47E;	
+	}
+	
+	/* green_sea */
+	.xet_btn.green_sea:active,
+	.xet_btn.green_sea:hover {
+		background: #19B698;	
+	}
+	
+	/* orange */
+	.xet_btn.orange:active,
+	.xet_btn.orange:hover {
+		background: #F4A62A;	
+	}
+	
+	
+	 /* red */
+	.xet_btn.red:active,
+	.xet_btn.red:hover {
+		background: #D14233;	
+	}
+	
+	/* silver */
+	.xet_btn.silver:active,
+	.xet_btn.silver:hover {
+		background: #CBD0D3;	
+	}
+	
+}

@@ -1,0 +1,115 @@
+@charset "utf-8";
+/* 갤러리 스타일 -------------------------------------------------------------------------------------------------------- */
+.xet-galleryWrp { 
+	position:relative;
+}
+
+/* No Item */
+.xet-galleryWrp .no-item {
+	padding: 10px;
+	text-align:center;
+}
+
+/* Notice */
+.xet-galleryWrp .notice-item {
+	font-size: 12px;
+	padding: 10px 0;
+	margin-bottom: 15px;
+	background-color: #fff;	
+	border:1px solid #e1e1e1;
+}
+.xet-galleryWrp .notice-item .cover-infoManager {
+	margin: 0 !important;
+	padding: 0;
+}
+.xet-galleryWrp .notice-item .cover-infoDate span {
+	display: inline-block;
+	margin-right: 5px;;
+}
+
+/* Item */
+.xet-galleryWrp .item { 
+	float:left; 
+}
+.xet-galleryWrp .itemBox { 
+	font-size: 12px;
+	overflow:hidden; 
+	background-color: #f9f9f9;	
+	color: #777;
+	border:0 solid #e1e1e1;
+	transition-duration: .2s;
+	-moz-transition-duration: .2s;
+	-webkit-transition-duration: .2s;
+	-o-transition-duration: .2s;
+}
+.xet-galleryWrp .itemBox a {
+	color: #777;
+}
+.xet-galleryWrp .itemBox.on {
+	background-color: #111;
+	color: #fff;
+}
+.xet-galleryWrp .itemBox.on a { 
+	color: #fff;
+}
+.xet-galleryWrp .thumbnail {
+	display: block;
+	overflow: hidden
+}
+.xet-galleryWrp .thumbnail img { 
+	vertical-align:top;
+	width: 100%;
+	transition-duration: .3s;
+	-moz-transition-duration: .3s;
+	-webkit-transition-duration: .3s;
+	-o-transition-duration: .3s;
+}
+.xet-galleryWrp .cover-infoWrp {
+	padding: 15px;
+}
+
+.xet-galleryWrp .cover-infoWrp > p {
+	padding: 0;
+	margin-bottom: 10px;
+}
+.xet-galleryWrp .cover-infoWrp > p:last-child {
+	margin-bottom: 0;
+}
+.xet-galleryWrp .cover-infoSubject a { 
+	display: inline;
+	font-size: 16px;
+	font-weight: bold; 
+	color: #111;
+}
+.xet-galleryWrp .cover-infoSummary { 
+	font-size: 14px;
+}
+.xet-galleryWrp .cover-infoCategory { 
+}
+.xet-galleryWrp .cover-infoCount {
+}
+.xet-galleryWrp .cover-infoCount a,
+.xet-galleryWrp .cover-infoCount span {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+@media (min-width: 992px) {
+	.xet-galleryWrp .notice-item {
+		margin-bottom: 30px;
+	}
+	.xet-galleryWrp .cover-infoWrp {
+		padding: 30px;
+	}
+	.xet-galleryWrp .itemBox:hover {
+		background-color: #111;
+		color: #fff;
+	}
+	.xet-galleryWrp .itemBox:hover a {
+		color: #fff;
+	}
+	.xet-galleryWrp .itemBox:hover img {
+		opacity: 0.5;
+		transform: scale(1.2, 1.2);
+	}
+}

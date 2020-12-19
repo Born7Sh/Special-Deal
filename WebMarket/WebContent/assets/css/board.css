@@ -1,0 +1,689 @@
+@charset "utf-8";
+
+/* Board Reset
+-------------------------------------------------------------------------------------------------------- */
+#xet-boardWrp * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+#xet-boardWrp { 
+	word-break: keep-all; 
+	font-size: 14px;
+	color:#555;
+}
+#xet-boardWrp table, 
+#xet-boardWrp input, 
+#xet-boardWrp textarea, 
+#xet-boardWrp select, 
+#xet-boardWrp button {
+	font-size: 14px;
+}
+#xet-boardWrp a,
+#xet-boardWrp a:hover,
+#xet-boardWrp a:active,
+#xet-boardWrp a:focus {
+	text-decoration:none; 
+}
+#xet-boardWrp .float-left {
+	float:left; 
+}
+#xet-boardWrp .float-right { 
+	float:right; 
+}
+#xet-boardWrp .xet_clearfix,
+#xet-boardWrp .xet-clearfix {
+	*zoom: 1;
+}
+#xet-boardWrp .xet_clearfix:after,
+#xet-boardWrp .xet-clearfix:after {
+	display: block;
+	content: "";
+	clear: both;
+}
+
+#xet-boardWrp .text-center {
+	text-align: center !important;
+}
+#xet-boardWrp .text-right {
+	text-align: right !important;
+}
+.pd-0 {
+	padding: 0 !important
+}
+#xet-boardWrp .mg-t10 {
+	margin-top: 10px !important;
+}
+#xet-boardWrp .mg-t15 {
+	margin-top: 15px !important;
+}
+#xet-boardWrp .mg-t20 {
+	margin-top: 20px !important;
+}
+#xet-boardWrp .mg-t30 {
+	margin-top: 30px !important;
+}
+#xet-boardWrp .mg-b10 {
+	margin-bottom: 10px !important;
+}
+#xet-boardWrp .mg-b15 {
+	margin-bottom: 15px !important;
+}
+#xet-boardWrp .mg-b20 {
+	margin-bottom: 20px !important;
+}
+#xet-boardWrp .mg-b30 {
+	margin-bottom: 30px !important;
+}
+
+.vertical-align {display: table;table-layout: fixed;height: 100%;width: 100%;}
+.vertical-align > .inner {width: 100%;height: inherit;display: table-cell;}
+.vertical-align-middle,
+.vertical-align > .inner.middle {	vertical-align: middle}
+
+/* 공통 
+-------------------------------------------------------------------------------------------------------- */
+#xet-boardWrp .notice-text {
+	display: inline-block;
+	padding: 4px 8px;
+	border-radius: 3px;
+	background-color: #e6127c;
+	color: #fff;
+}
+#xet-boardWrp .notice-icon {
+	color: #e6127c;
+}
+#xet-boardWrp .new-icon,
+#xet-boardWrp .update-icon,
+#xet-boardWrp .file-icon,
+#xet-boardWrp .secret-icon { 
+	margin-right: 3px;
+} 
+#xet-boardWrp .text-red,
+#xet-boardWrp .new-icon {
+	color: #c00;
+}
+#xet-boardWrp .update-icon { 
+	color: #cc00cc;
+} 
+#xet-boardWrp .file-icon { 
+	color: #777;
+} 
+#xet-boardWrp .secret-icon { 
+	color: #777;
+} 
+#xet-boardWrp .comment-icon {
+	font-style: normal;
+	color: #c52dc1;
+}
+#xet-boardWrp .trackback-icon {
+	font-style: normal;
+	color: #22c941;
+}
+#xet-boardWrp .category-icon { 
+	white-space: nowrap;
+	color: #3498db;
+}
+#xet-boardWrp select {
+	width: 100%;
+	height: 38px;
+	margin:0;
+	padding: 0 10px;
+	border:0;
+	font-size: 14px;
+	color:#555;
+	background: url(../img/common/angle-down.svg) no-repeat 99% 50% #fff;
+	background-size: 12px;
+	border-radius: 0;
+	-webkit-appearance: none; 
+	-moz-appearance: none;
+	appearance: none;
+}
+#xet-boardWrp select:focus {
+	outline: 0;
+}
+
+/* 첨부된 파일 개수 출력 
+-------------------------------------------------------------------------------------------------------- */
+#xet-boardWrp .thumbnail { 
+	position: relative;
+	display: block;
+} 
+#xet-boardWrp .thumbnail>em {
+	z-index: 1;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	padding: 0;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	border-radius: 50%;
+	font-size: 11px;
+	font-style: normal;
+	color: #fff;
+	background-color: rgba(0,0,0,.4);
+}
+#xet-boardWrp .thumbnail img {
+	vertical-align: top;
+	max-width: 100%;
+}
+
+/* 게시판 설정 버튼
+-------------------------------------------------------------------------------------------------------- */
+#xet-boardWrp .xet-boardAdmin {
+	text-align: right;
+	margin-bottom: 20px;
+}
+#xet-boardWrp .cover-infoManager input[type="checkbox"] { 
+	width:13px; 
+	height:13px; 
+	margin: 0 6px 0 0;
+}
+#xet-boardWrp .cover-infoManager a {
+	font-size: 14px;
+	color: #555;
+}
+
+/* 상단
+-------------------------------------------------------------------------------------------------------- */
+#xet-boardWrp .boardHeaderText { 
+	margin: 15px 0; 
+}
+/* 하단
+-------------------------------------------------------------------------------------------------------- */
+#xet-boardWrp .xet-boardFooter { 
+	margin: 15px 0;
+}
+
+/* 게시판 제목 및 설명
+-------------------------------------------------------------------------------------------------------- */
+#xet-boardWrp .boardHeaderTitleWrp { }
+#xet-boardWrp .boardHeaderTitle {
+	font-size: 24px; 
+}
+#xet-boardWrp .boardHeaderTitle a { 
+	font-weight: bold;
+	color: #111; 
+}
+/* 부제목 */
+#xet-boardWrp .boardHeaderTitle em { 
+	font-style: normal; 
+	font-weight: normal; 
+	color: #555; 
+}
+/* 상세설명 */
+#xet-boardWrp .boardHeaderDesc {
+	font-size: 14px;
+	margin-top: 15px;
+	color: #555;
+}
+
+
+/* 카테고리 Dropdown
+-------------------------------------------------------------------------------------------------------- */
+#xet-boardWrp .boardHeaderCateWrp {
+	margin-bottom: 30px;
+}
+#xet-boardWrp .boardCategoryWrp { 
+	float: left;
+	width: 160px;
+	padding: 0;
+	margin: 0 15px 0 0; 
+}
+#xet-boardWrp .boardCategoryWrp a[data-toggle="category-dropdown"] {
+	background: url(../img/common/angle-down.svg) no-repeat 90% 50%;
+	background-size: 12px;
+}
+#xet-boardWrp .boardCategoryWrp a[data-toggle="category-dropdown"].open {
+	background: url(../img/common/angle-up.svg) no-repeat 90% 50%;
+	background-size: 12px;
+}
+#xet-boardWrp .boardCategoryWrp ul {
+	z-index: 10; 
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border: 1px solid #e1e1e1;
+	background-color: #fff;
+	border-radius: 3px;
+}
+#xet-boardWrp .boardCategoryWrp ul li {
+	display: block;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid #e1e1e1;
+}
+#xet-boardWrp .boardCategoryWrp>ul>li {
+	border-bottom: 0;
+}
+#xet-boardWrp .boardCategoryWrp ul li:last-child {
+	border-bottom: 0;
+}
+#xet-boardWrp .boardCategoryWrp ul li.depth {
+	padding-left: 15px;
+}
+#xet-boardWrp .boardCategoryWrp ul li a { 
+	position: relative;
+	display: block; 
+	padding: 10px 15px; 
+	margin: 0;
+	text-decoration:none; 
+	font-size: 14px; 
+	color: #555; 
+}
+#xet-boardWrp .boardCategoryWrp ul li a.on { 
+	color: #3499dc;
+}
+#xet-boardWrp .boardCategoryWrp ul li a.on>img.sort {
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	margin-top: -5px;
+	width: 10px;
+	height: 10px;
+}
+#xet-boardWrp .boardCategoryWrp ul ul {
+	display: none;
+	z-index: 10;
+	position: absolute;
+	top: 100%;
+	left: -1px;
+	right: -1px;
+	box-shadow: 0px 2px 4px rgba(0,0,0,.07);
+}
+#xet-boardWrp .boardCategoryWrp ul ul.close {
+	border: 0;
+	box-shadow: none;
+}
+
+
+/* Require Password 비밀번호 요구 박스
+-------------------------------------------------------------------------------------------------------- */
+#xet-boardWrp .requirePassword {
+	text-align:center; 
+}
+#xet-boardWrp .requirePassword fieldset { 
+	border:0; 
+	margin:0; 
+	padding:0;
+}
+#xet-boardWrp .requirePassword h3 {
+	font-size:14pt; 
+	padding:0;
+	margin:20px 0;
+	color:#555;
+}
+#xet-boardWrp .requirePassword .inputText { 
+	display:inline-block;
+	padding:0 10px;
+	width:150px; 
+	height: 28px;
+	line-height: 28px;
+	vertical-align:middle; 
+	color:#777;
+	background: #fbfbfb;
+	border: 1px solid #e1e1e1;
+	box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+	border-radius:3px;
+  }
+#xet-boardWrp .requirePassword .inputText:focus {
+	background:#fff;
+	color:#555;
+ }
+
+
+/* 삭제 박스 
+-------------------------------------------------------------------------------------------------------- */
+#xet-boardWrp .smallBox { 
+	margin: 15px 0 0; 
+	padding:20px; 
+	text-align:center; 
+	border: 0px solid #e1e1e1;
+}
+#xet-boardWrp .smallBox p { 
+	margin:0 0 20px;
+	font-size: 14px;
+}
+#xet-boardWrp .smallBox h3 {
+	padding:0;
+	margin:0 0 20px;
+	color:#ff0000;
+}
+
+
+/* 메세지(권한) 박스 
+-------------------------------------------------------------------------------------------------------- */
+#xet-boardWrp .smallBox.messageWrp {
+	max-width: 420px;
+	margin: 10px auto;
+	background: #f9f9f9;
+}
+
+
+
+/* 태그 출력 리스트 
+-------------------------------------------------------------------------------------------------------- */
+#xet-boardWrp .tagCloud { 
+	padding:20px 0; 
+}
+#xet-boardWrp .tagCloud * { 
+	margin:0; 
+	padding:0;
+}
+#xet-boardWrp .tagCloud h3 {
+	margin:0 0 20px;
+	padding-bottom:20px;
+	color:#333;
+	border-bottom:1px solid; 
+	border-color:#e1e1e1; 
+}
+#xet-boardWrp .tagCloud ul { 
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+#xet-boardWrp .tagCloud li { 
+	display:inline;
+	list-style:none;
+	margin:0 5px 5px; 
+}
+#xet-boardWrp .tagCloud li.rank1 a { 
+	font-weight:bold; 
+	font-size:24px;
+	color:#2ecc71;
+}
+#xet-boardWrp .tagCloud li.rank2 a {
+	font-weight:bold; 
+	font-size:20px;
+	color:#e67e22;
+}
+#xet-boardWrp .tagCloud li.rank3 a { 
+	font-weight:bold;
+	font-size:18px;
+	color:#27ae60;
+}
+#xet-boardWrp .tagCloud li.rank4 a { 
+	font-size:16px;
+	color:#8e44ad
+}
+#xet-boardWrp .tagCloud li.rank5 a { 
+	font-size:14px;
+	color:#7f8c8d;
+}
+
+/* Pagination  
+-------------------------------------------------------------------------------------------------------- */
+#xet-boardWrp .boardPagination { 
+	list-style: none;
+	padding: 0;
+	margin: 20px 0 0;
+	text-align: center;
+	display: block;
+    font-size: 0;
+    position: relative;
+    vertical-align: middle;
+}
+#xet-boardWrp .boardPagination > li {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+#xet-boardWrp .boardPagination > li:not(.prevEnd):first-child > a {
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    margin-left: 0;
+}
+#xet-boardWrp .boardPagination > li:last-child > a {
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+}
+/*
+#xet-boardWrp .boardPagination > li + li {
+    margin-left: -1px;
+}
+*/
+#xet-boardWrp .boardPagination img { 
+	border:0;
+}
+#xet-boardWrp .boardPagination a,
+#xet-boardWrp .boardPagination strong { 
+	position:relative;
+	display:inline-block;
+	text-decoration:none;
+	margin:0;
+	padding:0;
+	font-size: 12px;
+	font-weight: normal;
+	width:30px;
+	height:30px;
+	line-height: 30px;
+	vertical-align: top;
+	white-space: nowrap;
+	text-align:center; 	
+	border: 0 solid #e1e1e1;
+	background-color: transparent;
+	color: #555;
+}
+#xet-boardWrp .boardPagination .page_on {
+	border-radius: 3px;
+	background-color: #4b4b4b;
+	border-color: #4b4b4b;
+	color: #fff !important;
+}
+#xet-boardWrp .boardPagination .page_mobile {
+	width: 100px;
+}
+
+#xet-boardWrp .boardPagination li.prevEnd,
+#xet-boardWrp .boardPagination li.nextEnd { 
+	padding: 0 15px;
+}
+#xet-boardWrp .boardPagination li.prevEnd a,
+#xet-boardWrp .boardPagination li.nextEnd a { 
+	width: auto;
+	border: 0;
+}
+
+
+/* Search 
+-------------------------------------------------------------------------------------------------------- */
+#xet-boardWrp .boardSearch {
+	display: table;
+	margin: 20px auto;
+	line-height: 34px;
+	font-size: 0;
+	text-align: center;
+}
+#xet-boardWrp .boardSearch * {
+	vertical-align: middle;
+}
+
+#xet-boardWrp .boardSearchForm {
+	margin: 0;
+	padding:0;
+}
+#xet-boardWrp .boardSearch .search-target {
+	display:inline-block;
+	height: 36px;
+	padding: 0;
+	border:1px solid #e1e1e1; 
+	border-right: 0;
+	background: #f9f9f9; 
+	color:#555;
+}
+#xet-boardWrp .boardSearch .search-target select {
+	width: 100px;
+	height: 100%;
+	font-size: 12px;
+	background-position: 90% 50%;
+}
+
+#xet-boardWrp .boardSearch .inputText { 	
+	vertical-align: top;
+	display: inline-block !important;
+	width: 200px;
+	height: 36px; 
+	font-size: 14px;
+	padding:0 5px; 
+	margin:0;
+	color:#777;
+	background: #fff;
+	border: 1px solid #e1e1e1;
+	border-right: 0;
+	-webkit-border-radius: 0;
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+#xet-boardWrp .boardSearch .inputText:focus { 
+	color: #333;
+	background: #fff;
+}
+#xet-boardWrp .boardSearch .search-btn {
+	display: inline-block;
+	border: 1px solid #e1e1e1;
+	border-left: 0;
+	overflow: hidden;
+}
+#xet-boardWrp .boardSearch .search-btn>a,
+#xet-boardWrp .boardSearch .search-btn>button { 
+	display:inline-block;
+	font-size: 12px;
+	height: 34px; 
+	line-height: 34px;
+	margin:0; 
+	padding:0 15px; 
+	cursor:pointer; 
+	background: #f9f9f9;
+	border: 0;
+	border-left: 1px solid #e1e1e1;
+	color:#555;
+}
+#xet-boardWrp .boardSearch .search_btn i {
+	vertical-align: middle;
+}
+
+
+/* Tag 
+-------------------------------------------------------------------------------------------------------- */
+#xet-boardWrp .tag_wrp { 
+	position:relative; 
+	margin:20px 0 0;
+	padding:10px 0;
+	text-align:right;
+	border-top:1px solid #e1e1e1;
+}
+#xet-boardWrp .tag_wrp a { 
+	display:inline-block; 
+	padding:5px 10px;
+	color:#555;
+}
+
+/* Modal (delete)
+-------------------------------------------------------------------------------------------------------- */
+#modal-form-back {
+	z-index: 99999;
+	display:none;
+	position:fixed; 
+	width:100%; height:100%;
+	top:0; left:0; 
+	background:rgba(0,0,0,0.7);
+}
+.modal-form {
+	display:none;
+	z-index: 999999;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-100%);
+	width: 90%;
+	max-width: 480px;
+	padding: 15px;
+	background: #fff;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+}
+.modal-form .modal-header {
+	position: relative;
+	text-align: center;
+	padding: 10px 0;
+	margin-bottom: 10px; 
+	color: #333;
+}
+.modal-form .modal-body {
+	text-align: center;
+}
+.modal-form .modal-content {
+  	padding: 20px;
+}
+
+
+/* responsive 
+-------------------------------------------------------------------------------------------------------- */
+
+@media (max-width: 767px) {	
+	.visible-xs {
+		display: block !important;
+	}
+  	.hidden-xs {
+    	display: none !important;
+  	}
+  	
+	/* 카테고리 */
+	#xet-boardWrp .boardHeaderCateWrp {
+		margin-bottom: 15px;
+	}
+	#xet-boardWrp .boardHeaderCateWrp>.float-right {
+		margin-bottom: 15px;
+	}
+	#xet-boardWrp .boardCategoryWrp { 
+		width: 120px;
+	}
+	#xet-boardWrp .boardCategoryWrp ul ul {
+		width: 160px;
+	}
+	#xet-boardWrp .boardCategoryWrp.half-on {
+		width: 48%;
+		margin-right: 0;
+	}
+	#xet-boardWrp .boardCategoryWrp.half-on2 {
+		width: 48%;
+		float: right;
+		margin-right: 0;
+	}
+	#xet-boardWrp .boardCategoryWrp.half-on ul ul,
+	#xet-boardWrp .boardCategoryWrp.half-on2 ul ul {
+		width: auto;
+	}
+	
+	
+	/* 검색 */
+	#xet-boardWrp .boardSearchForm {
+		margin-bottom: 15px;
+	}
+	#xet-boardWrp .boardSearch {
+		float: none !important;
+		text-align: center;
+	}
+	#xet-boardWrp .boardSearch span.l-r3 {
+	}
+	#xet-boardWrp .boardSearch .inputText { 	
+		width: 40%;
+	}
+	
+	/* 버튼 */
+	.xet_btn {	}
+			
+}
+@media (min-width: 768px) {
+	.visible-sm {
+		display: block;
+	}
+  	.hidden-sm {
+    	display: none;
+  	}
+}

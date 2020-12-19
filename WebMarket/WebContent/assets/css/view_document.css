@@ -1,0 +1,643 @@
+@charset "utf-8";
+
+/* view document 
+-------------------------------------------------------------------------------------------------------- */
+.xet-boardView {
+	margin-bottom: 30px;
+}
+.xet-boardReadWrp {
+	margin-bottom: 20px;
+}
+.boardReadHeader {
+	margin:0; 
+	padding:0;  
+	color: #777;
+}
+
+/* view normal style */
+.boardReadHeader .boardReadSubject { 
+	padding: 0;
+	margin: 10px 0; 
+	word-break: keep-all; 
+}
+.boardReadHeader .boardReadSubject a.subject { 
+	font-size: 24px; 
+	line-height:150%; 
+	font-weight:bold; 
+	color:#333;
+}
+.boardReadHeader .boardReadSubject a.category {
+	margin-right:4px; 
+	font-size:18px; 
+	color:#2980b9;
+}
+.boardReadHeader .boardReadInfo {
+	margin-bottom: 10px; 
+	padding: 15px;
+	*zoom:1; 
+	color: #777;
+	font-size: 12px;
+	border-radius: 3px;
+	overflow: hidden;
+	border:1px solid #e1e1e1;
+	background-color: #f9f9f9;
+}
+.boardReadHeader .boardReadInfo:after { 
+	content:""; display:block; clear:both; 
+}
+.boardReadHeader .boardReadInfo .userWrp {
+	float: left;
+}
+.boardReadHeader .boardReadInfo span { 
+	display: inline-block;
+	margin: 0 10px 0 0;
+}
+.boardReadHeader .boardReadInfo .countWrp {
+	float: right;
+}
+.boardReadHeader .boardReadInfo .countWrp span {
+	margin: 0 0 0 10px;	
+}
+.boardReadHeader .boardReadInfo strong,
+.boardReadHeader .boardReadInfo a {
+	display:inline-block;
+	font-weight: normal;
+	color: #777;
+}
+
+/* view blog style */
+.boardReadHeader .boardReadSubject.blog {
+	text-align: center; 
+}
+.boardReadHeader .boardReadInfo.blog {
+	text-align: center;
+}
+.boardReadHeader .boardReadInfo.blog span { 
+	margin: 0 5px;
+}
+.boardReadHeader .boardReadInfo.blog strong { 
+	color: #333;
+}
+.boardReadHeader .boardReadInfo.blog .author {
+	font-weight: bold;
+	color: #333;
+}
+
+
+/* 확장 변수 출력 */
+.extraVarsView {
+	margin: 10px 0;
+	padding: 0 15px;
+	border-radius: 3px;
+	overflow: hidden;
+	border:1px solid #e1e1e1;
+	background-color: #fff;
+}
+.extraVarsView>ul { 
+	list-style: none;
+	margin: 0; 
+	padding: 0;	
+}
+.extraVarsView>ul>li {
+	margin: 0;
+	padding: 15px 0;
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+	border-bottom:1px solid #e1e1e1;
+}
+.extraVarsView>ul>li:last-child {
+	border-bottom: 0;
+}
+.extraVarsView .extraVarsItem { 
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+}
+.extraVarsView .extraVarsName {
+	display: inline-block;
+	vertical-align: middle;
+	position: absolute;
+	left: 0;
+	width: 160px;
+	font-weight: 700;
+}
+.extraVarsView .extraVarsValue {
+	margin-left: 160px;
+}
+.extraVarsView .extraVarsValue a {
+	color: #555;
+}
+
+
+	/* 비밀 글 */
+.secretMessage { 
+	max-width: 420px;
+	margin: 30px auto !important; 
+	padding: 0; 
+	text-align: center;
+}
+.secretMessage fieldset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+.secretMessage p { 
+	margin: 0 0 10px; 
+	padding:0; 
+}
+.secretMessage p [class^="ti-"] {
+	font-size: 36px;
+}
+.secretMessage input[type="password"] {
+	width: 100%;	
+}
+
+	/* 본문 */
+.boardReadBody { 
+	margin: 20px 0; 
+	padding: 0; 
+	word-break: break-all; 
+}
+.boardReadBody .btn_wrp {
+	margin: 0;
+	text-align: right;
+}
+
+.boardReadBody .vote-wrp {
+	margin: 30px 0 30px;
+	text-align: center;
+}
+.boardReadBody .vote-wrp button {
+	min-width: 100px;
+	padding: 20px 0;
+	border: 1px solid #e1e1e1;
+	background-color: #f1f1f1;
+	border-radius: 4px;
+}
+
+.xe_content {
+	word-break: keep-all; 
+	font-size: 14px !important;
+}
+ 
+/* (이 게시물을, 이 댓글을) */
+.document_popup_menu {
+	padding: 10px 0;
+}
+.document_popup_menu a { 
+	display: inline-block;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px; 
+	text-decoration:none;
+	font-weight: bold; 
+	color: #777;
+}
+
+/* 팝업 메뉴 */
+#popup_menu_area { 
+	margin:0;
+	padding:0; 
+	outline: 0;
+	font-size: 14px;
+	background: #fff; 
+	min-width: 100px;
+	box-shadow: 0 0 6px rgba(0,0,0,.3);
+}
+#popup_menu_area ul { 
+	margin:0; 
+	padding: 8px;
+	list-style:none; 
+}
+#popup_menu_area li a {
+	font-size: 14px;
+	padding: 4px;
+	color:#555;
+}
+#popup_menu_area li a:hover {
+	color:#fff; 
+}
+
+	/* 서명 */
+.boardReadFooter .memberSignature { 
+	position:relative; 
+	padding:15px;
+	margin-bottom: 10px; 
+	overflow:hidden;
+	border:1px solid #e1e1e1; 
+	background: #f9f9f9;
+}
+.boardReadFooter .memberSignature .profile { 
+	margin:0 20px 0 0;
+}
+.boardReadFooter .memberSignature .profile_text { 
+	overflow:hidden;
+	margin:0;
+	color:#555;
+}
+.boardReadFooter .memberSignature .profile_text p {
+	margin: 0;
+}
+
+	/* 첨부파일 (본문,댓글) */
+.attachedFileWrp {
+	margin-top: 15px;
+}
+.attachedFile { 
+	margin: 0;
+	padding: 0;
+	clear:both; 
+}
+.attachedFile dt i { 
+	margin:0; 
+	padding:0; 
+	vertical-align: middle;
+}
+.attachedFile dt .fileToggle { 
+	border:0; 
+	margin:0; 
+	padding:0; 
+	overflow:visible;
+	cursor:pointer; 
+	vertical-align: middle;
+	background:none;
+	color:#555;
+}
+.attachedFile dd { 
+	position:relative;
+	display:none; 
+	padding: 10px; 
+	margin: 5px 0 0; 
+	border-radius: 4px;
+	border:1px solid #e1e1e1; 
+	background:#f5f5f5;
+}
+.attachedFile.open dd {
+	display:block; 
+}
+.attachedFile ul.files { 
+	position:relative; 
+	margin:0; 
+	padding:0; 
+	clear:both;
+	list-style:none; 
+	text-align:left; 
+}
+.attachedFile ul.files * { 
+	display:inline-block;
+	*display:inline; 
+	padding:0;
+	margin:0; 
+	font-size: 12px; 
+}
+.attachedFile ul.files li { 
+	position:relative; 
+	margin:0 10px 0 0;
+}
+.attachedFile ul.files a { 
+	text-decoration:none !important; 
+	margin-right: 10px; 
+	color:#555;
+}
+.attachedFile ul.files a .bubble {
+	display:none; 
+	z-index:100; 
+	position:absolute;
+	top:-20px; 
+	left:0; 
+	padding: 4px 8px;
+	white-space:nowrap; 
+	border-radius: 4px;
+	border:1px solid #e1e1e1; 
+	background: #fff;
+}
+.attachedFile ul.files a:hover .bubble,
+.attachedFile ul.files a:active .bubble,
+.attachedFile ul.files a:focus .bubble { 
+	display:block; 
+	color:#ff9900; 
+}
+
+	
+	/* 태그 */
+.tagListWrp { 
+	margin-top: 15px;
+}
+.tagListWrp .tag { 
+	margin:0;
+	padding: 0; 
+	clear:both; 
+}
+.tagListWrp .tag * { 
+	display:inline; 
+	margin:0; 
+	padding:0; 
+	vertical-align:middle;
+}
+.tagListWrp .tag dt { }
+.tagListWrp .tag dd { 
+	margin-right:5px; 
+}
+.tagListWrp .tag dd a { 
+	font-size: 14px;
+	color: #555;
+}
+
+	/* 엮인글 */
+.trackbackURLWrp { 
+	margin-top: 15px;
+}
+.trackbackURLWrp .trackbackURL { 
+	margin: 0;
+	padding: 0; 
+	clear:both; 
+}
+.trackbackURLWrp .trackbackURL * { 
+	display:inline; 
+	margin:0;
+	padding:0;
+}
+.trackbackURLWrp .trackbackURL dt { 
+	margin-right:5px; 
+}
+.trackbackURLWrp .trackbackURL dd { 
+	text-decoration:none;
+}
+.trackbackURLWrp .trackbackURL a { 
+	text-decoration:none;
+	color: #555;
+}
+	
+
+
+.boardReadFooter {
+}
+
+.boardBtnWrp {
+
+}
+
+/* 이전,다음 게시물 보기
+-------------------------------------------------------------------------------------------------------- */
+.next_nav {
+	list-style:none;
+	margin:0;
+	padding:10px 0;
+	border-bottom:1px solid #e1e1e1; 
+	color:#555;
+}
+.next_nav:after {
+	content:""; clear:both; display:block;
+}
+.next_nav li {
+	float:left;
+	width:50%;
+	text-align:right;
+	margin:0;
+	padding:0;
+}
+.next_nav li:first-child {
+	text-align:left;
+}
+.next_nav li a {
+	display:inline-block;
+	color:#555;
+}
+
+
+
+/* comment
+-------------------------------------------------------------------------------------------------------- */
+.feedbackList { 
+	position:relative;
+	padding:0; 
+	margin: 0; 
+}
+
+	/* 엮인글 수, 댓글 수 */
+.feedbackList .feedbackHeader {
+	margin: 0; 
+	padding: 0 0 10px; 
+	border-bottom: 1px solid #e1e1e1;
+}
+.feedbackList .feedbackHeader a {}
+.feedbackList .feedbackHeader em { 
+	font-style: normal;
+}
+
+	/* 엮인글 목록 */
+#trackback {
+	margin-bottom: 20px;
+}
+.feedbackList .trackbackList {
+	position:relative; 
+	margin:0;
+	padding:0; 
+	color: #777;
+}
+.feedbackList .trackbackList .trackbackURL {
+	margin:0; 
+	padding:0; 
+}
+.feedbackList .trackbackList a { 
+	font-size: 14px; 
+	color: #777; 
+}
+.feedbackList .trackbackList .btn-wrp {
+	text-align: right;
+}
+
+
+	/* 댓글 목록 */
+.feedbackList .replyList { 
+	clear:both; 
+	margin:0; 
+	padding:0;
+}
+.feedbackList .item { 
+	position:relative; 
+	margin: 0;
+	padding: 15px 0;
+	border-bottom: 1px dotted #e1e1e1;
+	*zoom:1; 
+	 transition:all 0.3s ease-in;
+	-moz-transition:all 0.3s ease-in;
+	-webkit-transition:all 0.3s ease-in;	
+} 
+.feedbackList .item:last-child {
+	border-bottom: 0;
+}
+.feedbackList.form .item { 
+	padding: 15px;
+	border: 1px solid #e1e1e1;
+} 
+.feedbackList .item:after {
+	content:""; 
+	display:block; 
+	clear:both; 
+}
+.feedbackList .item .indent { 
+	position:relative; 
+	margin:0; 
+	padding:0; 
+	*zoom:1;
+}
+.feedbackList .item .indent:after { 
+	content:""; 
+	display:block; 
+	clear:both;
+}
+.feedbackList .item.itemReply .indent { }
+	
+
+
+
+/* 댓글 작성자 정보 */
+.feedbackList .item .itemAside {
+	position:relative; 
+	float:left;
+	overflow:hidden; 
+	margin:0; 
+	padding:0; 
+	*zoom:1; 
+	text-align:center;
+	z-index:2;
+
+}
+.feedbackList .item .itemAside img.profile { 
+	width: 50px;
+	vertical-align:top; 
+}
+
+	
+/* 댓글 내용 부분 */
+.feedbackList .item .itemContent { 
+	position:relative; 
+	overflow:hidden;  
+	margin:0; 
+	padding:0 0 0 15px; 
+}
+.feedbackList .item .itemContent .meta { 
+	margin: 0; 
+	white-space: normal;
+	vertical-align: middle;
+	font-size: 12px;
+	color: #999;
+}
+.feedbackList .item .itemContent .meta a {
+	color: #555;
+}
+.feedbackList .item .itemContent .meta>span {
+	margin-right: 10px;
+}
+
+/* 첨부 파일 */
+.feedbackList .item .itemContent .attachedFile { 
+	border:0; 
+}
+
+/* 비밀 댓글 */
+.feedbackList .secretMessage { 
+	margin: 0 !important;
+	text-align: left !important
+}
+.feedbackList .secretMessage input[type="password"] { 
+	width:200px;	
+}
+
+/* 댓글 옵션 버튼 부분 */
+.feedbackList .itemContent .option { 
+	position:relative; 
+	margin: 0; 
+	padding:0;
+	list-style:none; 
+	white-space:nowrap; 
+	*zoom:1;
+}
+.feedbackList .itemContent .option li { 
+	position:relative;
+	float: left;
+	display:inline; 
+	padding:0;
+}
+.feedbackList .itemContent .option li.wouldYou a { 
+	font-size:11px;
+	padding:0;
+	color:#555;
+}
+.feedbackList .itemContent .option li a { 
+	text-decoration:none;
+	color:#555;
+}
+
+/* Editor */
+.commentEditor { 
+	position:relative; 
+	margin-bottom:15px !important;
+	padding:15px !important; 
+	border:1px solid #e1e1e1; 
+}
+
+	/* Editor Option */
+.editorOption {
+	margin: 0; 
+}
+.editorOption * { 
+	vertical-align:middle;
+}
+.editorOption select { 
+	margin-right:10px; 
+}
+
+
+
+/* responsive 
+-------------------------------------------------------------------------------------------------------- */
+@media (max-width: 321px) {
+	.boardReadHeader .boardReadInfo .countWrp {
+		float: left;
+		width: 100%;
+		margin-top: 10px;
+	}
+	.boardReadHeader .boardReadInfo .countWrp span {
+		margin: 0 10px 0 0;
+	}
+
+
+}
+
+@media (max-width: 767px) {	
+	.boardReadHeader .boardReadSubject a.subject { 
+		font-size:18px; 
+	}	
+	.extraVarsView>ul>li {
+		padding: 10px 0;
+	}
+	.extraVarsView .extraVarsName {
+		position: relative;
+		width: 100%;
+		margin-bottom: 5px;
+	}
+	.extraVarsView .extraVarsValue {
+		margin-left: 0;
+	}
+	.feedbackList .itemContent .option li a>span {
+		display: none
+	}
+			
+}
+@media (min-width: 992px) {
+	.feedbackList .option-wrp {
+		opacity: 0;
+		visibility: hidden;
+		transition:all 0.1s ease-in;
+		-moz-transition:all 0.1s ease-in;
+		-webkit-transition:all 0.1s ease-in;	
+	}
+	.feedbackList .item:hover .option-wrp {
+		opacity: 1;
+		visibility: visible
+	}
+}

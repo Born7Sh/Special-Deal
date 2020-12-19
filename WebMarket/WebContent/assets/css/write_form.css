@@ -1,0 +1,280 @@
+@charset "utf-8";
+
+
+/* write form 
+--------------------------------------------------------------------------------------------------------*/
+.boardWrite input::placeholder,
+.boardWrite textarea::placeholder {
+	color: #ccc;
+}
+
+.boardWrite { 
+	margin: 0; 
+	padding: 0;
+}
+.boardWrite .caption {
+	text-align: right;
+	margin: 20px 0 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #e1e1e1;
+	color: #777;
+}
+.boardWrite em { 
+	color:#2980b9; 
+}
+.boardWrite .boardWriteHeader { 
+	margin:0 0 4px; 
+	padding:0; 
+	vertical-align:top;
+}
+.boardWrite .write_type {
+	margin: 0 0 10px;
+}
+.boardWrite .write_type * {
+	vertical-align:middle;
+}
+.boardWrite .write_type .category { 
+	display: block;
+	padding: 0;
+	border:1px solid #e1e1e1;
+}
+.boardWrite .write_type .category select { 
+	width: 100%;
+	margin: 0;
+	padding: 0 5px;
+	border: 0;
+	height: 38px;
+	background: #fbfbfb;
+	color: #777;
+}
+.boardWrite .write_type .input_title {
+	position: relative;
+	font-weight: bold;
+	margin: 0 0 5px;
+	padding: 0;
+}
+.boardWrite .write_type .input_form .btn {
+	height: 38px !important;
+	line-height: 36px !important;
+}
+
+	/* 제목 입력 */
+.boardWrite .inputText {
+	width:  100%;
+}
+.boardWrite input[type=text],
+.boardWrite input[type=password] { 
+	display:inline-block;
+	height: 38px;
+	line-height: 38px;
+	padding:0 10px;
+	color:#777;
+	background: #fff;
+	border: 1px solid #e1e1e1;
+	box-shadow: inset 0 2px 4px rgba(0,0,0,.1);
+	border-radius:3px;
+}
+.boardWrite textarea { 
+	width: 100%;
+	display:inline-block;
+	padding: 10px;
+	color:#777;
+	background: #fff;
+	border: 1px solid #e1e1e1;
+	box-shadow: inset 0 2px 4px rgba(0,0,0,.1);
+	border-radius:3px;
+	resize: vertical;
+}
+.boardWrite input:focus,
+.boardWrite textarea:focus {
+	outline: none;
+	border-color: #c1c1c1;
+	background: #fff;
+	color:#555;
+}
+
+.boardWrite .write_type p {
+	margin:10px 0;
+	text-align: left;
+}
+.boardWrite .boardEditor {
+	margin-bottom: 10px;
+	padding: 15px;
+	border: 1px solid #e1e1e1;
+	background-color: #f1f1f1;
+}
+/* editor */
+.boardWrite .editor * {
+	-webkit-box-sizing: content-box !important;
+    -moz-box-sizing: content-box !important;
+    box-sizing: content-box !important
+}
+.boardWrite .cke_chrome {
+	border: 1px solid #e1e1e1 !important;
+	box-shadow: none !important;
+}
+.boardWrite .cke_top {
+	border-bottom: 1px solid #e1e1e1 !important;
+}
+.boardWrite .cke_bottom {
+	border-top: 1px solid #e1e1e1 !important;
+}
+.boardWrite .cke_toolbar_break {
+	display: none !important
+}
+
+	/* 약관동의 */
+.boardWrite .write_type .agree {
+	height: 100px;
+	resize: none;
+	overflow-y: scroll;
+	box-shadow: none;
+	background: #fff;
+	color: #555;
+}
+
+.write_type input[type=radio],
+.write_type input[type=checkbox] { 
+	margin: 0 2px 0 0;
+	vertical-align:middle;
+}
+.write_type input+label {
+	margin: 0 5px 0 0;
+}
+
+	/* 확장 변수 입력 */
+.write_type em { 
+	font-style:normal;
+	font-weight:normal; 
+}
+.extraVarsList button {
+	white-space:nowrap;
+}
+.extraVarsList .current_address,
+.extraVarsList .krZip input,
+.extraVarsList .address,
+.extraVarsList .text,
+.extraVarsList .homepage,
+.extraVarsList .email_address,
+.extraVarsList textarea { 
+	width: 100%; 
+}
+
+.extraVarsList .date { }
+.extraVarsList .tel { }
+.extraVarsList textarea { }
+.extraVarsList .select { 
+	height: 38px;
+	line-height: 38px;
+	border: 1px solid #e1e1e1 !important;
+	border-radius: 3px !important
+}
+.extraVarsList ul { 
+	margin:0; 
+	padding:0; 
+	list-style:none; 
+}
+.extraVarsList ul li {
+	display: inline; 
+	margin:0 0 10px 0;
+	padding: 4px 0;
+}
+
+/* xe 1.7 도로명 주소부분 */
+.extraVarsList .krZip {
+	display:inline-block;
+	vertical-align:top;
+	width: 100%;
+	margin:0;
+}
+.extraVarsList .krZip .box {
+	margin:0 0 10px !important;
+}
+
+/* 다음 주소 */
+.extraVarsList input[type="text"]:disabled {
+	margin-bottom: 3px;
+	background-color: #e1e1e1;
+	box-shadow: none;
+}
+
+
+/* 댓글 폼 */
+.cmtWrite {
+	margin: 0;
+}	
+#recomment-form {
+	margin-top: 15px;
+	display: none;
+}
+.cmtWrite .textarea {
+	padding: 15px;
+	background: #fff;
+	border: 1px solid #e1e1e1;
+	background-color: #f1f1f1;
+	border-radius: 6px;
+}
+.cmtWrite textarea { 
+	min-height: 120px;
+	max-height: 500px;
+	overflow: hidden scroll;
+	padding: 10px;
+	color:#777;	
+	border: 1px solid #e1e1e1;
+	box-shadow: inset 0 2px 4px rgba(0,0,0,.1);
+	border-radius: 0;
+	resize: none;
+	 transition:all 0.3s ease-in;
+	-moz-transition:all 0.3s ease-in;
+	-webkit-transition:all 0.3s ease-in;	
+}
+.cmtWrite textarea:focus {
+	outline: none;
+	border-color: inherit;
+}
+.cmtWrite .write_type input+label {
+	margin: 0;
+}
+.cmtWrite .write_type input[type=checkbox] + label {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	font-size: 0 !important;
+}
+.cmtWrite .write_type input[type=checkbox] {
+	display: none;
+}
+.cmtWrite .write_type input[name=notify_message] + label {
+	background: url(../img/common/notify.svg) no-repeat center center;
+	background-size: 20px;
+}
+.cmtWrite .write_type input[name=notify_message]:checked + label {
+	background: url(../img/common/notify_on.svg) no-repeat center center;
+	background-size: 20px;
+}
+.cmtWrite .write_type input[name=is_secret] + label {
+	background: url(../img/common/lock.svg) no-repeat center center;
+	background-size: 20px;
+}
+.cmtWrite .write_type input[name=is_secret]:checked + label {
+	background: url(../img/common/lock_on.svg) no-repeat center center;
+	background-size: 20px;
+}
+
+
+/* responsive 
+-------------------------------------------------------------------------------------------------------- */
+
+@media (max-width: 767px) {	
+	.boardWrite .write_type .input_form {
+		width: 100%;
+		padding-left: 0;
+	}
+			
+}
+@media (max-width: 479px) {	
+	
+	
+}
+
